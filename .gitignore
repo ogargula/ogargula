@@ -14,3 +14,4 @@ api-docs/
 
 # Ignore eleventy output when doing manuell tests
 _site/
+**/main.min.css
