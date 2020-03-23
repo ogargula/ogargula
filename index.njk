@@ -1,0 +1,19 @@
+--- 
+layout: base-layout.njk 
+pagination: 
+    data: collections.post 
+    size: 10 
+    reverse: true 
+    alias: posts 
+---
+{% for post in posts %}
+    <section>
+        <a href="{{ post.url | url }}">
+            <h1>{{ post.data.title }}</h1>
+        </a>
+        <time class="time" datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
+        <h2>
+            {{ post.data.subtitle }}
+        </h2>
+    </section>
+{% endfor %}
