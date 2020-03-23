@@ -1,7 +1,7 @@
 ---
 title: "Falando um pouco sobre Refatoração"
 layout: post-layout.njk
-subtitle: This is a sub
+subtitle: Algumas dicas sobre refatoração em diferentes cenários e complexidades.
 date: 2019-06-10
 tags: ["post"]
 ---
