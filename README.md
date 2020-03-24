@@ -8,11 +8,15 @@ Para gerar e organizar as páginas utilizo o [11ty(Eleventy)](https://www.11ty.d
 
 Até o momento não uso nenhum framework como React ou Vue devido o escopo simples que esse blog possui até então. Uso apenas o [Nunjuks](https://mozilla.github.io/nunjucks/) como _template engine_
 
+<p align="center"> 
+  <img src="doc/site.png" height="500px" alt="site versão normal">
+</p>
+
 O layout foi feito apenas com CSS puro e é adaptável a vários tamanhos de tela.
 
-<center><img src="doc/site.png" alt="topo" style="height: 300px;"></center>
-<center><img src="doc/mob.png" alt="mobile" style="height: 300px;"></center>
-
+<p align="center">
+  <img src="doc/mob.png" height="500px" title="site versão mobile">
+</p>
 
 ## Hospedagem
 
