@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "clear": "rimraf _site",
-    "build:css": "rimraf css/main.min.css && npx cleancss css/* -o css/main.min.css",
+    "build:css": "rimraf src/css/main.min.css && npx cleancss src/css/* -o src/css/main.min.css",
     "build": "yarn run clear && yarn run build:css && npx eleventy",
     "serve": "npx eleventy --serve",
     "debug": "DEBUG=* npx eleventy"
