@@ -20,6 +20,6 @@ O layout foi feito apenas com CSS puro e é adaptável a vários tamanhos de tel
 
 ## Hospedagem
 
-Uso para hospedagem o [Zeit](https://zeit.co/), uma plataforma poderosa e super simples de usar, que permite que projetos sejam hospedados de maneira gratuita. Além disso mantém projetos inportantes como o [Next JS](https://github.com/zeit/next.js/)
+Uso para hospedagem o [Zeit](https://zeit.co/), uma plataforma poderosa e super simples de usar, que permite que projetos sejam hospedados de maneira gratuita. Além disso mantém projetos importantes como o [Next JS](https://github.com/zeit/next.js/)
 
 > Visitem!!! >>> [gargula.space](https:gargula.space)
