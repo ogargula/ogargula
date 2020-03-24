@@ -10,11 +10,9 @@ Até o momento não uso nenhum framework como React ou Vue devido o escopo simpl
 
 O layout foi feito apenas com CSS puro e é adaptável a vários tamanhos de tela.
 
-<br />
-<center>
-<img src="doc/site.png" alt="topo" style="height: 300px;">
-<img src="doc/mob.png" alt="mobile" style="height: 300px;">
-</center>
+<center><img src="doc/site.png" alt="topo" style="height: 300px;"></center>
+<center><img src="doc/mob.png" alt="mobile" style="height: 300px;"></center>
+
 
 ## Hospedagem
 
