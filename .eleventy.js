@@ -1,5 +1,6 @@
 const moment = require("moment");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 moment.locale("pt-br");
 
@@ -17,6 +18,8 @@ module.exports = function(eleventyConfig) {
   // Folders to copy to output folder
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/css/main.min.css");
+
+  eleventyConfig.addPlugin(pluginRss);
 
   return { dir: { input: "src" } };
 };

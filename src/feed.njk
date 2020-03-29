@@ -1,0 +1,40 @@
+---
+permalink: feed.xml
+metadata:
+  title: O Gárgula
+  url: https://gargula.space
+  author:
+    name: Lianker Lopes
+    email: lianker.dev@gmail.com
+  feed:
+    subtitle: Este é um projeto onde posso testar tecnologias e compartilhar conhecimento a medida que aprendo novas coisas. Além disso é um canto onde posso escrever alguns pensamentos e opiniões sobre diversos assuntos, ligados a tecnologia ou a outros assuntos que tambem me interessam.
+    filename: feed.xml
+    path: feed/feed.xml
+    url: https://gargula.space/feed.xml
+    id: https://gargula.space
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <link href="{{ metadata.url }}"/>
+  {% if collections.post | length %}
+    <updated>{{ collections.post | rssLastUpdatedDate }}</updated>
+  {% endif %}
+  <id>{{ metadata.url }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}</email>
+  </author>
+  {%- for post in collections.post %}
+    {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+    <entry>
+      <title>{{ post.data.title }}</title>
+      <link href="{{ absolutePostUrl }}"/>
+      <updated>{{ post.date | rssDate }}</updated>
+      <id>{{ absolutePostUrl }}</id>
+      <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    </entry>
+  {%- endfor %}
+</feed>
