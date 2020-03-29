@@ -117,6 +117,10 @@ nav div a:visited {
   width: 100%;
 }
 
+#comments-line {
+  margin-top: 64px;
+}
+
 article h1 {
   font-size: 36px;
   font-weight: bold;

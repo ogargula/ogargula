@@ -4,6 +4,7 @@ layout: post-layout.njk
 subtitle: Algumas dicas sobre refatoração em diferentes cenários e complexidades.
 date: 2019-06-10
 tags: ["post"]
+show_comments: true
 ---
 
 Todo desenvolvedor já passou pela dúvida de refatorar um código ou não. Se arriscar em uma renomeação de variável, ou na extração de algumas linhas para um novo método um pouco mais coeso. Nem sempre essa é uma tarefa fácil, afinal toda ação causa uma reação e toda escolha traz uma consequência. Mas antes de partir para mudanças é necessário refletir sobre alguns pontos.
